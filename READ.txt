@@ -1,0 +1,10 @@
+Kreirati bazu sa tabelom Auto sa poljima marka, cena i ručno popuniti nekoliko Auta u bazu, 				(10 bodova)
+Kreirati DAO klasu sa metodama:			(15 bodova)	
+o	 Auto vratiPrvi(string marka): vraća prvi auto (najmanji id) koji je prosledjene marke  						
+Kreirati index.jsp koji samo ispisuje povratne poruke od servleta ako nešto nije dobro prosleđeno. 				(5 bodova)
+
+Kreirati Servlet koji u : 				(10 bodova)	
+o	doGet radi logout i unistava sesiju i vraća na index.jsp		
+
+Kreirati prikazJeftinih.jsp koji ispisuje listu auta (tabela) ako sesija postoji, a u suprotnom redirektuje na index.jsp. Ispod liste postaviti link za logout.							(15 bodova)
+Povezani DAO, SERVLET i JSP koji rade 	(15 bodova)
