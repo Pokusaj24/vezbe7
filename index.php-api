@@ -1,0 +1,16 @@
+<?php
+require 'flight/Flight.php';
+require '../DAO.php';
+
+Flight::route('GET /auto/vratiPrvi/@marka', function($marka) {
+    $dao = new DAO();
+    $auto = $dao->vratiPrvi($marka);
+    if ($auto) {
+        echo json_encode($auto);
+    } else {
+        echo json_encode(["message" => "Nema automobila sa prosleđenom markom."]);
+    }
+});
+
+Flight::start();
+?>
